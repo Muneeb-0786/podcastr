@@ -1,0 +1,16 @@
+name: Sync with Hugging Face Hub
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync with Hugging Face
+        uses: nateraw/huggingface-sync-action@v0.0.4
+        with:
+          github_repo_id: <your_github_username>/<repo>
+          huggingface_repo_id: imunee/wow
+          repo_type: space
