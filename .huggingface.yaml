@@ -1,0 +1,5 @@
+# .huggingface.yaml
+repos:
+  - type: model
+    id: imunee/mcp-server-test
+    path: .
